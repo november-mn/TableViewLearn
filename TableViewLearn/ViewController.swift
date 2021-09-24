@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tblView: UITableView!
     
-    let arr = ["apple", "banana", "grape", "blueberry", "strawberry", "orange"]
+    let arr = ["apple", "banana", "grape", "blueberry", "strawberry", "orange", "cherry", "mango","raspberry","kiwi"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.imgView.image = UIImage(named: arr[indexPath.row])
         cell.lblImage.text = arr[indexPath.row]
-        print(indexPath.row)
-        print(arr[indexPath.row])
         return cell;
     }
 
